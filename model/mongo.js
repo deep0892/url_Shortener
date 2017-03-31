@@ -1,14 +1,14 @@
-var mongoose    =   require("mongoose");
+var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/URLShortDB');
+mongoose.connect('mongodb://10.0.8.62:27017/URLShortDB');
 // create instance of Schema
-var mongoSchema =   mongoose.Schema;
+var mongoSchema = mongoose.Schema;
 // create schema
-var urlSchema  = {
-    "LongURL" : String,
-    "_id" : String,
-    "ReqSource" : String,
-    "CreatedOn" : String
+var urlSchema = {
+    "LongURL": String,
+    "_id": String,
+    "ReqSource": String,
+    "CreatedOn": String
 };
 // create model if not exists.
-module.exports = mongoose.model('URLCollection',urlSchema);
+module.exports = mongoose.model('URLCollection', urlSchema);

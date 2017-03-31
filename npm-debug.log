@@ -1,37 +1,23 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
-1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
-2 info using npm@2.11.3
-3 info using node@v0.12.7
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart nodeMongo@1.0.0
-6 info start nodeMongo@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info nodeMongo@1.0.0 Failed to exec start script
-9 verbose stack Error: nodeMongo@1.0.0 start: `node server.js`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
-9 verbose stack     at EventEmitter.emit (events.js:110:17)
-9 verbose stack     at ChildProcess.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
-9 verbose stack     at ChildProcess.emit (events.js:110:17)
-9 verbose stack     at maybeClose (child_process.js:1015:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-10 verbose pkgid nodeMongo@1.0.0
-11 verbose cwd D:\asmit\URL_ShortApp
-12 error Windows_NT 6.1.7601
-13 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-14 error node v0.12.7
-15 error npm  v2.11.3
-16 error code ELIFECYCLE
-17 error nodeMongo@1.0.0 start: `node server.js`
-17 error Exit status 1
-18 error Failed at the nodeMongo@1.0.0 start script 'node server.js'.
-18 error This is most likely a problem with the nodeMongo package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node server.js
-18 error You can get their info via:
-18 error     npm owner ls nodeMongo
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose stack Error: missing script: start
+4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:142:19)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:58:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+5 verbose cwd /home/pbadmin/Downloads/URL_ShortApp
+6 error Linux 4.4.0-70-generic
+7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+8 error node v4.6.1
+9 error npm  v2.15.9
+10 error missing script: start
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
